@@ -4,7 +4,8 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import ShopPage from "./components/shop/shop";
 import Header from "./components/header/header";
-import { Routes, Route, Link } from "react-router-dom";
+import Form from "./pages/Form/Form";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route path="/shop" element={<ShopPage />} />
+        <Route path="/signin" element={<Form />} />
       </Routes>
     </div>
   );
