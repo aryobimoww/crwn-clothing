@@ -24,7 +24,8 @@ $main-color: black;
     &:focus {
       outline: none;
     }
-    &:focus ~ .form-input-label {
+
+    &:focus ~ label {
       @include shrinkLabel();
     }
   }

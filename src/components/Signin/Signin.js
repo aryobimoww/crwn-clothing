@@ -23,13 +23,13 @@ class Signin extends React.Component {
   render() {
     return (
       <div className="signin">
-        <h2>alredy have an account</h2>
+        <h2 className="title">alredy have an account</h2>
         <span>sign in with your email and password</span>
 
         <form onSubmit={this.handleSubmit}>
           <FormInput
             type="email"
-            value={this.state.name}
+            value={this.state.email}
             name="email"
             label="email"
             handleChange={this.handleChange}
